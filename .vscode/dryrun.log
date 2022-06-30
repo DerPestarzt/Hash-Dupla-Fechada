@@ -1,0 +1,7 @@
+make.exe --dry-run --keep-going --print-directory
+make: Entering directory 'd:/Downloads/Hash-Dupla-Fechada'
+mkdir -p ./build/
+mkdir -p ./build/objects
+ 
+make: Leaving directory 'd:/Downloads/Hash-Dupla-Fechada'
+ 

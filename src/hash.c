@@ -29,25 +29,14 @@ void Imprime(HashTable *h){
 }
 
 
-// int getValue(HashTable *h, int key){
-// 	int idx = hash(key, h->M);
-// 	int aux = idx;
-	
-// 	while (h->table[idx].key != key){
-// 		idx = (idx + 1) % h->M;
-// 		if (idx == aux){
-// 			return -1;
-// 		}
-// 	}
-
-// 	return h->table[idx].value;
-// }
-
-void Insert(HashTable *h, int key, int value){
+void Insert(HashTable *h, int key, int value, int *cont){
 	int idx = hash(key, h->M);
 	if (h->table[idx].W == h->M){
 		printf("Está Cheia\n");
 		return;
+	}
+	if (h->table[idx].W != 0){
+		(*cont)++;
 	}
 	
 	h->table[idx].dados[h->table[idx].W].key   = key;

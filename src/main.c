@@ -4,9 +4,10 @@ int main(){
 	HashTable h;
 	int M = 41;
 	int cont = 0;
+
 	
 	Initialize(&h, M);
-	
+
 	Insert(&h, 64, 1001, &cont);
 	Insert(&h, 11, 1002, &cont);
 	Insert(&h, 20, 1003, &cont);
@@ -37,6 +38,7 @@ int main(){
 	Imprime(&h);
 	printf("\n\n");
 	printf("Contador de Conflitos: %d\n", cont);
+	
 
 
 	return 0;

@@ -49,7 +49,7 @@ void Imprime(HashTable *h){
 }
  ```
 <h2>Insert</h2>
-A função <code>Insert</code> realiza o calculo da Hash e verifica se a posição não tem uma chave e valor, caso não tenha eles são inseridos.
+A função <code>Insert</code> realiza o calculo da Hash e verifica se a posição não tem uma chave e valor, caso já tenha, adiciona a chave e valor a segunda lista.
 <br></br>
 
 ```   C
@@ -75,7 +75,7 @@ Ao criar inserir 20 Chaves e valores em uma Hash de 41 posições (o primeiro nu
 
 
 
-Sendo printado chave, valor e quantidade de colisões que aconteceram na execução.
+Sendo printado chave, valor de forma com que as chaves e valores printados a direita são da segunda lista, ou seja são valores que colidiram, tambem é printado a quantidade de colisões que aconteceram na execução.
 # Compilação e Execução
 
 
